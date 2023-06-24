@@ -1,22 +1,3 @@
 table:
   name: pizza_topping_pizza
   schema: public
-object_relationships:
-  - name: pizza_pizza_topping_pizza
-    using:
-      manual_configuration:
-        column_mapping:
-          pizza_id: id
-        insertion_order: null
-        remote_table:
-          name: pizza_topping
-          schema: public
-  - name: pizza_topping_pizza_topping_pizza
-    using:
-      manual_configuration:
-        column_mapping:
-          pizza_topping_id: id
-        insertion_order: null
-        remote_table:
-          name: pizza_topping
-          schema: public

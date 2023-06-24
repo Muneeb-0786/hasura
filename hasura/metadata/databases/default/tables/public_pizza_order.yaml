@@ -1,22 +1,3 @@
 table:
   name: pizza_order
   schema: public
-object_relationships:
-  - name: friend_pizza_order
-    using:
-      manual_configuration:
-        column_mapping:
-          friend_id: id
-        insertion_order: null
-        remote_table:
-          name: friend
-          schema: public
-  - name: pizza_pizza_order
-    using:
-      manual_configuration:
-        column_mapping:
-          pizza_id: id
-        insertion_order: null
-        remote_table:
-          name: pizza
-          schema: public
